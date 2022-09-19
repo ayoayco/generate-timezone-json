@@ -8,7 +8,7 @@
     "test": "generate-timezone-json --tab-file zone.tab"
   },
   "bin": {
-    "generate-timezone-json": "./index.js"
+    "generate-timezone-json": "node index.js"
   },
   "repository": {
     "type": "git",
