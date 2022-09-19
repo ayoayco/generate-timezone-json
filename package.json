@@ -25,6 +25,7 @@
   "author": "Ayo Ayco",
   "license": "ISC",
   "dependencies": {
+    "@vvo/tzdb": "^6.63.0",
     "parse-zonetab": "^1.0.0"
   }
 }
