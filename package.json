@@ -23,5 +23,8 @@
     "database"
   ],
   "author": "Ayo Ayco",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "parse-zonetab": "^1.0.0"
+  }
 }
