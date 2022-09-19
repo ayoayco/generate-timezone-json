@@ -1,0 +1,27 @@
+{
+  "name": "generate-timezone-json",
+  "version": "1.0.0",
+  "description": "Generate JSON file containing timezones from a tab file or the official IANA database",
+  "main": "index.js",
+  "scripts": {
+    "test": "generate-timezone-json --tab-file zone.tab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ayoayco/generate-timezone-json"
+  },
+  "keywords": [
+    "timezones",
+    "json",
+    "timezones",
+    "tab",
+    "timezones",
+    "iana",
+    "db",
+    "timezones",
+    "iana",
+    "database"
+  ],
+  "author": "Ayo Ayco",
+  "license": "ISC"
+}
