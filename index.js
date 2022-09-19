@@ -8,7 +8,7 @@ if (args.length < 3) {
     // no file
     const tzdb = require("@vvo/tzdb");
     console.log("... from IANA Database");
-    const data = JSON.stringify(tzdb.getTimeZones({ includeUtc: true }).sort(compare));
+    const data = JSON.stringify(tzdb.getTimeZones({ includeUtc: true }));
     writeToFile(data);
 } else {
     // file name
@@ -22,7 +22,7 @@ if (args.length < 3) {
         if (err) throw err;
 
         parseZonetab(raw).then(rows => {
-            const data = JSON.stringify(rows.sort(compare));
+            const data = JSON.stringify(rows);
             writeToFile(data);
         });
 
@@ -38,6 +38,7 @@ function writeToFile(data) {
     });
 }
 
+/*
 function compare(a, b) {
     const bid = b.id || b.name;
     const aid = a.id || a.name;
@@ -50,4 +51,5 @@ function compare(a, b) {
     }
     return 0;
 };
+*/
 
