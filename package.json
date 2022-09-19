@@ -4,11 +4,11 @@
   "description": "Generate JSON file containing timezones from a tab file or the official IANA database",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node .",
     "test": "generate-timezone-json --tab-file zone.tab"
   },
   "bin": {
-    "generate-timezone-json": "node index.js"
+    "generate-timezone-json": "./index.js"
   },
   "repository": {
     "type": "git",
