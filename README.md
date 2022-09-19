@@ -5,9 +5,9 @@
 
 ### Usage
 
-1. Run: `generate-timezone-json` to generate timezones.json from official IANA Database, 
+1. Run: `npx generate-timezone-json` to generate timezones.json from official IANA Database, 
     - this will generate a file named "timezones.json" with data coming from the official IANA database
-1. Run: `generate-timezone-json <filename>` to generate timezones.json from a TAB file, 
+1. Run: `npx generate-timezone-json <filename>` to generate timezones.json from a TAB file, 
     - for example, using a file named "zone.tab": `generate-timezone-json zone.tab`
 
 ### Gotchas
