@@ -1,5 +1,10 @@
 # Generate Timezone JSON
 
+![npm](https://img.shields.io/npm/v/generate-timezone-json)
+![npm](https://img.shields.io/npm/l/generate-timezone-json)
+![npm](https://img.shields.io/npm/dt/generate-timezone-json)
+![npm](https://img.shields.io/github/last-commit/ayoayco/generate-timezone-json)
+
 ### Installation
 Run `npm i generate-timezone-json` to install in your current node project
 
