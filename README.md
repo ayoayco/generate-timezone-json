@@ -5,6 +5,8 @@
 [![npm](https://img.shields.io/npm/dt/generate-timezone-json)](https://www.npmjs.com/package/generate-timezone-json)
 [![github](https://img.shields.io/github/last-commit/ayoayco/generate-timezone-json)](https://github.com/ayoayco/generate-timezone-json)
 
+This is a node package which allows the generation of a JSON file containing time zones information. You could provide it your own zone.tab file, in which case it will parse the file to generate the JSON. If not given any input, it will pull the latest official time zones for you.
+
 ### Installation
 Run `npm i generate-timezone-json` to install in your current node project
 
