@@ -10,11 +10,11 @@
 1. Run: `npx generate-timezone-json <filename>` to generate timezones.json from a TAB file, 
     - for example, using a file named "zone.tab": `generate-timezone-json zone.tab`
 
-### Gotchas
-1. Note that the structure of the generated JSON file will be different depending on the source (i.e, zone.tab or the IANA timezones database)
+*Important Note:* the structure of the generated JSON file will be different depending on the source (i.e, zone.tab or the IANA timezones database)
 
 ### Planned features (not yet implemented)
 
 1. Specify an output directory with option `--outDir`: `generate-timezone <filename> --outDir <directory>`
+2. Uniform JSON structure for all sources
 
 
