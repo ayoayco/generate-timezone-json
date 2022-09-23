@@ -36,7 +36,7 @@ if (args.length < 3) {
 function isTabFile(fileName) {
     if (!!fileName && fileName !== '') {
         const extension = fileName.split('.')[1];
-        return extension === 'tab';
+        return (extension && extension.toLowerCase()) === 'tab';
     }
 
     return false;
