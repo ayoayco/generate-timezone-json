@@ -1,57 +1,50 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const args = process.argv;
 
 console.log("Generating Timezone JSON");
-
-const args = process.argv;
 
 if (args.length < 3) {
     // no file
     const tzdb = require("@vvo/tzdb");
-    console.log("... from IANA Database");
     const data = JSON.stringify(tzdb.getTimeZones({ includeUtc: true }));
+
+    console.log("... from IANA Database");
     writeToFile(data);
 } else {
     // file name
     const fileName = args[2];
-    const parseZonetab = require("parse-zonetab");
 
-    console.log("... from file", fileName);
+    if (isTabFile(fileName)) {
+        const parseZonetab = require("parse-zonetab");
 
-    fs.readFile(fileName, (err, raw) => {
+        fs.readFile(fileName, (err, raw) => {
+            if (err) throw err;
+            parseZonetab(raw).then(rows => {
+                const data = JSON.stringify(rows);
+                console.log("... from file", fileName);
+                writeToFile(data);
+            });
 
-        if (err) throw err;
-
-        parseZonetab(raw).then(rows => {
-            const data = JSON.stringify(rows);
-            writeToFile(data);
         });
+    } else {
+        console.error('Error: input not a TAB file', fileName)
+    }
+}
 
+function isTabFile(fileName) {
+    if (!!fileName && fileName !== '') {
+        const extension = fileName.split('.')[1];
+        return extension === 'tab';
+    }
 
-    });
+    return false;
 }
 
 function writeToFile(data) {
-
     fs.writeFile("timezones.json", data, (err) => {
         if (err) throw err;
         console.log("... done writing to file: timezones.json");
     });
 }
-
-/*
-function compare(a, b) {
-    const bid = b.id || b.name;
-    const aid = a.id || a.name;
-
-    if (aid < bid) {
-        return -1;
-    }
-    if (aid > bid) {
-        return 1;
-    }
-    return 0;
-};
-*/
-
