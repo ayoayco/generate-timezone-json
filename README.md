@@ -9,10 +9,7 @@ This is a node package which allows the generation of a JSON file containing tim
 
 *Please report issues found or suggestions in the [project issues page](https://github.com/ayoayco/generate-timezone-json/issues)*
 
-**Use cases where you may need this script:**
-1. you need to sync the time zones information in your frontend app with a tab file (i.e. tab-seperated values), which is commonly used in servers
-1. you need to have a dropdown/combobox with the latest time zones in your web application
-1. you have a server-side function that needs information related to a location/time zone
+**Use case:** This script is specifically useful when you need a JSON file with timezones information. Maybe you need this information to be synced with your server which uses a tab file (i.e., tab-separated values). Or maybe you just need a static persistent file generated from the latest official time zones database. In these cases, this script is what you need. For other use cases, see "Other Options" section below.
 
 **Recommendation:** For performance, I recommend you don't generate the JSON file multiple times in run time. Determine a single point in your app/system's life cycle when it is best to do this (e.g., pre-build time or once when requested for the first time).
 
