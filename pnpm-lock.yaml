@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@vvo/tzdb':
-    specifier: ^6.127.0
-    version: 6.127.0
+    specifier: ^6.133.0
+    version: 6.133.0
   parse-zonetab:
     specifier: ^1.0.0
     version: 1.0.0
 
 packages:
 
-  /@vvo/tzdb@6.127.0:
-    resolution: {integrity: sha512-hUBWE0cYmoL3BQfs7b8S5sTaYnfIrP2km6DeolkTX4/V/rS4kgH2/m99pwCbdcq8ZmQL2Jcb0Htd95nnyX3anA==}
+  /@vvo/tzdb@6.133.0:
+    resolution: {integrity: sha512-qDSicu+JDdlDOoZfG85GIyKnSWANNwJ+RpQXUOuRLyCy2RmtDpG182gWI/6ul3SEpuMTByfSiMRn17vOlKXUYg==}
     dev: false
 
   /buffer-alloc-unsafe@1.1.0:
