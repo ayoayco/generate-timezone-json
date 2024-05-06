@@ -1,6 +1,6 @@
 {
   "name": "generate-timezone-json",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "bin": "./index.js",
   "description": "Generate JSON file containing timezones from a tab file or the official IANA database",
   "main": "index.js",
