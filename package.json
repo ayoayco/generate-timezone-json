@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ayoayco/generate-timezone-json"
+    "url": "https://git.ayo.run/ayo/generate-timezone-json"
   },
   "keywords": [
     "timezones",
