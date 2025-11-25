@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@vvo/tzdb':
-        specifier: ^6.196.0
-        version: 6.196.0
+        specifier: ^6.197.0
+        version: 6.197.0
       parse-zonetab:
         specifier: ^1.0.0
         version: 1.0.0
 
 packages:
 
-  '@vvo/tzdb@6.196.0':
-    resolution: {integrity: sha512-5BBJBmxJ1z/TzSuKE10stIX4dOsFN4tlMqj3WMPBSGM8euO1z5X/s2DaTSkXlTzznD5aWa4nV3t//zChFHruag==}
+  '@vvo/tzdb@6.197.0':
+    resolution: {integrity: sha512-SB2jDs9lnYvYaGbzj/KMJrq7YSRshbtL4z1pN5evvzMlKWpAnsEtSVcXd5p5mY5NGwc+/dm0iv4wZxlg9vtr5w==}
 
   buffer-alloc-unsafe@1.1.0:
     resolution: {integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==}
@@ -131,7 +131,7 @@ packages:
 
 snapshots:
 
-  '@vvo/tzdb@6.196.0': {}
+  '@vvo/tzdb@6.197.0': {}
 
   buffer-alloc-unsafe@1.1.0: {}
 
