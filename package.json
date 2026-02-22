@@ -7,7 +7,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "node .",
-    "test": "generate-timezone-json --tab-file zone.tab"
+    "test": "generate-timezone-json --tab-file zone.tab",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "dependencies": {
     "@vvo/tzdb": "^6.198.0",
     "parse-zonetab": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
